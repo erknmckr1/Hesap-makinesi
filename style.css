@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px; /* 1 rem 10 pixel oran basit olsun dıye html etıketı ıcerısınde 10px dedik */
+}
+.calculator{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* elemente gore ortalamak ıstıyorsak */
+}
+.calculator-input{
+    width: 100%;
+    font-size: 4rem;
+    height: 7rem;
+    border: none;
+    background-color: antiquewhite;
+    text-align: right;   /* text ı sağa tasıdık */
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+button{
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: rgb(51, 16, 16);
+} 
+button:hover{
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+.operator{
+    color: chocolate;
+}
+.clear{
+   background-color: indianred;
+   color: white;
+   border-color: indianred;
+}
+.clear:hover{
+    background-color: firebrick;
+    transition: 0.5s;
+}
+.equal-sing{
+    background-color: darkcyan;
+    border-color: darkcyan;
+    color: white;
+    height: 100%;
+    grid-area: 2/4/6/4;  /* 2. satır 4. stuna tasıdık (=) bitişini de 6. satır 4. sutun verdık  */
+}
+.equal-sing:hover{
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+.calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  /* her satırda 4 eleman olacak ve %25 yer kaplıycaklar.. */
+    grid-gap: 20px; 
+    padding: 20px;
+}
