@@ -37,6 +37,12 @@ button{
     font-size: 2.5rem;
     color: rgb(51, 16, 16);
 } 
+.calculator-keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  /* 1fr dedık ve elemanlar esıt oranda dagıldı. */
+    grid-gap: 20px; 
+    padding: 20px;
+}
 button:hover{
     background-color: cadetblue;
     transition: 0.5s;
@@ -63,10 +69,4 @@ button:hover{
 .equal-sing:hover{
     background-color: goldenrod;
     border-color: goldenrod;
-}
-.calculator-keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);  /* her satırda 4 eleman olacak ve %25 yer kaplıycaklar.. */
-    grid-gap: 20px; 
-    padding: 20px;
 }
